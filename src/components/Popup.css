@@ -1,0 +1,36 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.popup {
+    background-color: #f0f0db;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.popup .tick-icon {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #30364f;
+    border-radius: 50%;
+}
+
+.popup button {
+    text-transform: capitalize;
+    background-color: #30364f;
+    color: #f0f0db;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 18px;
+}

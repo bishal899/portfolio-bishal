@@ -22,6 +22,7 @@
 .information-container {
     max-width: 400px;
     margin: 15px auto;
+    padding: 0 1.2rem;
 }
 
 .information-container h6 {
@@ -37,4 +38,9 @@
 
 .email-section {
     margin-bottom: 12px;
+}
+
+.information-container a {
+    text-decoration: none;
+    color: #30364f;
 }

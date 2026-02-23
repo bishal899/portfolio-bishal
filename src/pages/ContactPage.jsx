@@ -10,11 +10,11 @@ function ContactPage() {
         </div>
         <div className="email-section">
           <h6>email me: </h6>
-          bishalsardar76@gmail.com
+          <a href="mailto:bishalsardar76@gmail.com">bishalsardar76@gmail.com</a>
         </div>
         <div className="number-section">
           <h6>phone: </h6>
-          +91 8343863934
+          <a href="tel:+918343863934">+91 8343863934</a>
         </div>
       </div>
       <ContactForm />
