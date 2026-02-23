@@ -1,0 +1,17 @@
+.item {
+    display: block;
+
+}
+
+.item h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 8px 0;
+}
+
+.percent-view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,11 @@
+.fallback-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #30364f;
+    /* background-color: #30364f; */
+}

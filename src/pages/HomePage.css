@@ -1,0 +1,24 @@
+.home-page,
+.home-page .swiper {
+    height: 100%;
+}
+
+.swiper-button-prev {
+    left: 30px !important;
+}
+
+.swiper-button-next {
+    right: 30px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #30364f;
+    border-radius: 6px;
+    height: 67px;
+}
+
+.swiper-navigation-icon {
+    height: 30px !important;
+    color: #f0f0db;
+}

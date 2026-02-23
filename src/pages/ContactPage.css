@@ -1,0 +1,40 @@
+.contact-page {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    color: #30364f;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    text-transform: capitalize;
+}
+
+.contact-heading {
+    text-align: left;
+    padding: 1.6rem 0;
+}
+
+.heading-container p {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.information-container {
+    max-width: 400px;
+    margin: 15px auto;
+}
+
+.information-container h6 {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.email-section,
+.number-section {
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.email-section {
+    margin-bottom: 12px;
+}

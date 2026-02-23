@@ -1,0 +1,26 @@
+.footer {
+  background-color: #30364f;
+  color: #f0f0db;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  /* justify-content: center; */
+  padding: 1.4rem 2rem;
+  text-align: center;
+}
+
+.footer .time {
+  text-transform: uppercase;
+}
+
+.footer .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer .social-links a > * {
+  color: #f0f0db;
+  vertical-align: middle;
+}

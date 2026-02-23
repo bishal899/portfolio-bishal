@@ -1,0 +1,26 @@
+.first-slide-content .image-container {
+    height: 100%;
+    width: 400px;
+    background-image: url('/src/assets/bishal.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.content-container {
+    margin: auto;
+    padding: 1.8rem;
+    width: 100%;
+}
+
+.content-header {
+    text-transform: capitalize;
+    color: #30364f;
+    /* line-height: 5rem; */
+    margin: 12px 0;
+}
+
+.content-container p {
+    line-height: 20px;
+    max-width: 450px;
+}

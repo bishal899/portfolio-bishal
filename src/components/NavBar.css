@@ -1,0 +1,36 @@
+.header {
+  text-align: center;
+  background-color: #30364f;
+  color: #f0f0db;
+}
+
+.header h1 {
+  padding: 1.2rem 0;
+}
+.header h1 span {
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 0 6px;
+  cursor: pointer;
+}
+.header nav {
+  max-width: 680px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: auto;
+}
+
+.header a {
+  color: #f0f0db;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.header a.active {
+  background-color: #f0f0db;
+  color: #30364f;
+  font-weight: 600;
+}
