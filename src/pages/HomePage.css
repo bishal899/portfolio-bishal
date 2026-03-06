@@ -1,6 +1,7 @@
 .home-page,
 .home-page .swiper {
-    height: 100%;
+    /* make slider fill full viewport so mobile browsers show proper height */
+    height: 100vh;
 }
 
 .swiper-button-prev {
@@ -21,4 +22,15 @@
 .swiper-navigation-icon {
     height: 30px !important;
     color: #f0f0db;
+}
+
+/* adjust nav buttons on small viewports */
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 50px;
+    width: 50px;
+  }
+  .swiper-button-prev { left: 10px !important; }
+  .swiper-button-next { right: 10px !important; }
 }

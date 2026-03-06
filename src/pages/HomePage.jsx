@@ -2,16 +2,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import './HomePage.css'
-// import FirstSlideContent from '../components/sliderContent/FirstSlideContent';
-// import AboutSlideContent from '../components/sliderContent/AboutSlideContent';
-// import ContactSlideContent from '../components/sliderContent/ContactSlideContent';
-import { lazy } from 'react';
+import './HomePage.css';
+import { lazy, Suspense } from 'react';
+import Fallback from '../components/Fallback';
 
-const FirstSlideContent = lazy(() => import('../components/sliderContent/FirstSlideContent'))
-const AboutSlideContent = lazy(() => import('../components/sliderContent/AboutSlideContent'))
-const ContactSlideContent = lazy(() => import('../components/sliderContent/ContactSlideContent'))
-
+const FirstSlideContent = lazy(() => import('../components/sliderContent/FirstSlideContent'));
+const AboutSlideContent = lazy(() => import('../components/sliderContent/AboutSlideContent'));
+const ContactSlideContent = lazy(() => import('../components/sliderContent/ContactSlideContent'));
 
 function HomePage() {
   return (
@@ -22,20 +19,19 @@ function HomePage() {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        {/* <Suspense fallback={<Fallback />}> */}
-        <SwiperSlide>
-          <FirstSlideContent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <AboutSlideContent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ContactSlideContent />
-        </SwiperSlide>
-        {/* </Suspense> */}
+        <Suspense fallback={<Fallback />}>
+          <SwiperSlide>
+            <FirstSlideContent />
+          </SwiperSlide>
+          <SwiperSlide>
+            <AboutSlideContent />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ContactSlideContent />
+          </SwiperSlide>
+        </Suspense>
       </Swiper>
-
     </div>
-  )
+  );
 }
-export default HomePage
+export default HomePage;

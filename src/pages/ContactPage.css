@@ -44,3 +44,16 @@
     text-decoration: none;
     color: #30364f;
 }
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .contact-page {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .form-section {
+    grid-column: 1;
+    margin-top: 1rem;
+  }
+}

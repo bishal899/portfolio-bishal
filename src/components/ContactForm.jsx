@@ -17,13 +17,6 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault()
         setIsTrue(true)
-        // for (let i = 0; i < e.target.length-1; i++) {
-        //     const key = e.target[i].name
-        //     const value = e.target[i].value
-        //     setInputs
-        // }
-        // console.log(e.target.length)
-        // console.log(inputs)
         setInputs({
             name: '',
             email: '',

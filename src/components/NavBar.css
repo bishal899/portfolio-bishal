@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   text-align: center;
   background-color: #30364f;
   color: #f0f0db;
@@ -13,6 +14,19 @@
   margin: 0 6px;
   cursor: pointer;
 }
+/* toggle button for small screens */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f0f0db;
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+}
+
 .header nav {
   max-width: 680px;
   display: grid;
@@ -33,4 +47,23 @@
   background-color: #f0f0db;
   color: #30364f;
   font-weight: 600;
+}
+
+/* mobile adjustments */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+  .header nav {
+    display: none;
+    grid-template-columns: 1fr;
+  }
+  .header nav.open {
+    display: block;
+    text-align: center;
+  }
+  .header a {
+    display: block;
+    padding: 0.8rem 0;
+  }
 }
