@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Footer.css';
 
+
 function Footer(props) {
   const {today, time} = props
   return (
@@ -13,10 +14,10 @@ function Footer(props) {
         <Link>
           <FaFacebook size={28} />
         </Link>
-        <Link>
+        <Link to='https://www.linkedin.com/in/bishal-sardar-ab732b3b3/' target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={28} />
         </Link>
-        <Link>
+        <Link to='https://github.com/bishal899' target='_blank' rel="noopener noreferrer">
           <FaGithub size={28} />
         </Link>
       </div>
