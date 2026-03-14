@@ -1,3 +1,7 @@
+.first-slide-content {
+  animation: fadeUp 1s linear;
+}
+
 .first-slide-content .image-container {
     height: 100%;
     width: 400px;

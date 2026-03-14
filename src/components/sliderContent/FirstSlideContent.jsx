@@ -10,14 +10,7 @@ const nameAnimation = keyframes`
         width: 270px;
     }
 `
-// const bracketAnimation = keyframes`
-//     from {
-//         transform: translateX(0);
-//     }
-//     to {
-//         transform: translateX(225px);
-//     }
-// `
+
 const NameWraper = styled.span`
     width: 270px;
     // background-color: #0D1A63;
@@ -30,7 +23,7 @@ const NameWraper = styled.span`
     overflow: hidden;
     animation: ${nameAnimation} 1.5s ease;
     `
-    const Name = styled.span`
+const Name = styled.span`
     // display: inline-block;
     width: 230px;
     // color: #0AC4E0;
@@ -40,7 +33,7 @@ const NameWraper = styled.span`
     background-color: #0D1A63;
     z-index: -1;
     `
-    const SquareBracket = styled.span`
+const SquareBracket = styled.span`
     padding: 2px 4px;
     background-color: #0D1A63;
 `
@@ -50,14 +43,16 @@ function FirstSlideContent() {
         <div className="first-slide-content">
             <div className="image-container"></div>
             <div className="content-container">
-                <h1 className='content-header'>hi! i am 
+                <h1 className='content-header'>hi! i am
                     <NameWraper>
                         <SquareBracket>[</SquareBracket>
                         <Name>bishal sardar</Name>
                         <SquareBracket>]</SquareBracket>
                     </NameWraper>
                 </h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minus, quo suscipit ad maiores assumenda itaque ab distinctio officiis dolore atque vero sint</p>
+                <p>I craft digital experiences from scratch — turning ideas into clean code and compelling designs.
+                    Currently on a mission to master the web, one pixel at a time.
+                    Open to opportunities, collabs, and the occasional all-nighter.</p>
             </div>
         </div>
     )

@@ -7,6 +7,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     text-transform: capitalize;
+    padding-bottom: 50px;
 }
 
 .contact-heading {

@@ -8,7 +8,7 @@ function ContactSlideContent() {
             <img src="/get-in-touch.jpg" alt="get-in-touch" />
             <div className="content-container">
                 <h2>get in touch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit velit, ratione et molestias inventore dolores quidem cumque laborum.</p>
+                <p>I'm currently open to frontend developer roles and opportunities. If you're looking for someone detail-oriented, passionate about clean design, and eager to contribute — let's talk.</p>
                 <Link to='/contact' className='button'>contact me</Link>
             </div>
         </div>

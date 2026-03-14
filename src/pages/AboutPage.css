@@ -7,6 +7,7 @@
     grid-template-rows: auto 1fr;
     align-items: center;
     color: #30364f;
+    padding-bottom: 45px;
 }
 
 .about-content {
