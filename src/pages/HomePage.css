@@ -1,24 +1,13 @@
-.home-page,
-.home-page .swiper {
+.home-page {
     height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #30364f transparent;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
-.swiper-button-prev {
-    left: 30px !important;
-}
-
-.swiper-button-next {
-    right: 30px !important;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    background-color: #30364f;
-    border-radius: 6px;
-    height: 67px;
-}
-
-.swiper-navigation-icon {
-    height: 30px !important;
-    color: #f0f0db;
+.home-page>div {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
