@@ -1,10 +1,10 @@
 import { Link } from 'react-router'
-import './ContactSlideContent.css'
-import './SliderContent.css'
+import './HomeContactContent.css'
+import './HomeContactContent.css'
 
-function ContactSlideContent() {
+function HomeContactContent() {
     return (
-        <div className="contact-slide-content-container">
+        <div className="home-contact-content">
             <img src="/get-in-touch.jpg" alt="get-in-touch" />
             <div className="content-container">
                 <h2>get in touch</h2>
@@ -15,4 +15,4 @@ function ContactSlideContent() {
     )
 }
 
-export default ContactSlideContent
+export default HomeContactContent

@@ -1,4 +1,4 @@
-.contact-slide-content-container .content-container {
+.home-contact-content .content-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -7,13 +7,13 @@
     height: 22rem;
 }
 
-.contact-slide-content-container .content-container h2 {
+.home-contact-content .content-container h2 {
     text-transform: capitalize;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.contact-slide-content-container .content-container p {
+.home-contact-content .content-container p {
     margin-bottom: 5.5rem;
     font-weight: 400;
     font-size: 15px;

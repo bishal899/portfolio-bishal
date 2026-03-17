@@ -1,5 +1,5 @@
-import './FirstSlideContent.css'
-import './SliderContent.css'
+import './HomeHeroContent.css'
+import './HomeContent.css'
 import styled, { keyframes } from 'styled-components'
 
 const nameAnimation = keyframes`
@@ -18,6 +18,7 @@ const nameAnimation = keyframes`
 //         transform: translateX(225px);
 //     }
 // `
+
 const NameWraper = styled.span`
     width: 270px;
     // background-color: #0D1A63;
@@ -45,9 +46,9 @@ const NameWraper = styled.span`
     background-color: #0D1A63;
 `
 
-function FirstSlideContent() {
+function HomeHeroContent() {
     return (
-        <div className="first-slide-content">
+        <div className="home-hero-content">
             <div className="image-container"></div>
             <div className="content-container">
                 <h1 className='content-header'>hi! i am 
@@ -62,4 +63,5 @@ function FirstSlideContent() {
         </div>
     )
 }
-export default FirstSlideContent
+
+export default HomeHeroContent

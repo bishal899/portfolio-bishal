@@ -1,9 +1,9 @@
-.about-slide-content-container img {
+.home-about-content img {
     order: 2;
     justify-self: flex-end;
 }
 
-.about-slide-content-container .content-container {
+.home-about-content .content-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,7 +12,7 @@
     padding: 1.5rem;
 }
 
-.about-slide-content-container .content-container p {
+.home-about-content .content-container p {
     margin-bottom: 3rem;
     font-weight: 400;
     font-size: 15px;

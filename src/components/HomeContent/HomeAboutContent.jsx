@@ -1,10 +1,10 @@
 import { Link } from 'react-router'
-import './AboutSlideContent.css'
-import './SliderContent.css'
+import './HomeAboutContent.css'
+import './HomeContent.css'
 
-function AboutSlideContent() {
+function HomeAboutContent() {
     return (
-        <div className="about-slide-content-container">
+        <div className="home-about-content">
             <img src="/programming.jpg" alt="programming-image" />
             <div className="content-container">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam velit consequuntur fuga unde culpa facere autem laudantium architecto? Odio ab, eaque error atque, rerum, sequi laborum ex molestias excepturi omnis aspernatur commodi cupiditate nobis!</p>
@@ -14,4 +14,4 @@ function AboutSlideContent() {
     )
 }
 
-export default AboutSlideContent
+export default HomeAboutContent
