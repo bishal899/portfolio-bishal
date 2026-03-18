@@ -8,6 +8,13 @@
 body {
   background-color: #F0F0DB;
   position: relative;
+  overflow: auto;
+}
+
+body > div {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes fadeUp {

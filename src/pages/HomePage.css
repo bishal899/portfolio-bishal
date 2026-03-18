@@ -1,6 +1,6 @@
 .home-page {
     height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: #30364f transparent;
     scroll-behavior: smooth;
