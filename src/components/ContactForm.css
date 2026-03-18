@@ -1,13 +1,7 @@
-.form-section {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-top: 2.5rem;
-}
-
 .form-section form {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: 100%;
 }
 
 form label {
@@ -29,12 +23,15 @@ form input {
     background-color: #f0f0db;
     font-family: "Poppins", sans-serif;
 }
+
 form input[type='email'] {
     text-transform: lowercase;
 }
+
 form input[type='email']::placeholder {
     text-transform: capitalize;
 }
+
 form textarea {
     display: block;
     width: 100%;
@@ -69,4 +66,10 @@ form textarea::placeholder {
 .form-section form button:hover {
     background-color: #30364f;
     color: #f0f0db;
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        padding-top: 0 !important;
+    }
 }

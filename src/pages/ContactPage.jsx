@@ -6,7 +6,7 @@ function ContactPage() {
       <div className="information-container">
         <div className="heading-container">
           <h2 className="contact-heading">contact me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda voluptate accusamus!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi</p>
         </div>
         <div className="email-section">
           <h6>email me: </h6>

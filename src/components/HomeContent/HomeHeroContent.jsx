@@ -37,6 +37,7 @@ const NameWraper = styled.span`
         animation: ${nameMobileAnimation} 1.5s ease;
     }
     `
+    
 const Name = styled.span`
     width: 270px;
     position: absolute;
@@ -46,8 +47,10 @@ const Name = styled.span`
     z-index: -1;
     @media (max-width: 768px) {
         width: 210px;
+        left: 18px;
     }
     `
+
 const SquareBracket = styled.span`
     padding: 2px 4px;
     background-color: #0D1A63;

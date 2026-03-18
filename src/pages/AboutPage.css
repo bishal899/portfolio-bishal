@@ -9,7 +9,7 @@
     grid-template-rows: auto 1fr;
     align-items: center;
     color: #30364f;
-    overflow-y: auto;
+    overflow: auto;
     scrollbar-width: none;
 }
 

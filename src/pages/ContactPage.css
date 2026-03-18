@@ -1,17 +1,26 @@
 .contact-page {
-    width: 80%;
+    width: 100%;
+    max-width: fit-content;
     height: 100%;
     margin: auto;
-    display: grid;
     color: #30364f;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
     text-transform: capitalize;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.contact-page > div {
+    max-width: 575px;
+    width: 100%;
+    padding: clamp(1rem, 2.5vw, 2rem);
 }
 
 .contact-heading {
     text-align: left;
-    padding: 1.6rem 0;
 }
 
 .heading-container p {
@@ -20,8 +29,8 @@
 }
 
 .information-container {
+    width: 100%;
     max-width: 400px;
-    margin: 15px auto;
     padding: 0 1.2rem;
 }
 
@@ -43,4 +52,10 @@
 .information-container a {
     text-decoration: none;
     color: #30364f;
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+        flex-direction: column;
+    }
 }

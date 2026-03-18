@@ -7,7 +7,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function NavBar(props) {
   const [isTrue, setIsTrue] = useState(false);
-  const [isActive, setIsActive] = useState(true)
+  const [isActive, setIsActive] = useState(false)
 
   function openMenu() {
     console.log('opened')

@@ -45,6 +45,7 @@
 @media (max-width: 768px) {
     .home-page>div {
         flex-flow: column;
+        gap: 15px;
     }
 
     .button {
