@@ -6,7 +6,6 @@ const FirstSlideContent = lazy(() => import('../components/HomeContent/HomeHeroC
 const AboutSlideContent = lazy(() => import('../components/HomeContent/HomeAboutContent'))
 const ContactSlideContent = lazy(() => import('../components/HomeContent/HomeContactContent'))
 
-
 function HomePage() {
   return (
     <div className='home-page'>

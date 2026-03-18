@@ -4,7 +4,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 25px;
-    height: 22rem;
 }
 
 .home-contact-content .content-container h2 {
@@ -14,7 +13,6 @@
 }
 
 .home-contact-content .content-container p {
-    margin-bottom: 5.5rem;
     font-weight: 400;
     font-size: 15px;
     max-width: 400px;

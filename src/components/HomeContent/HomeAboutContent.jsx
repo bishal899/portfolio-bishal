@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import './HomeAboutContent.css'
-import './HomeContent.css'
+
 
 function HomeAboutContent() {
     return (

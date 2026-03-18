@@ -1,6 +1,7 @@
 import './HomeHeroContent.css'
-import './HomeContent.css'
+import myImage from '../../assets/bishal.png'
 import styled, { keyframes } from 'styled-components'
+import { FaArrowDown } from "react-icons/fa6";
 
 const nameAnimation = keyframes`
     from {
@@ -10,18 +11,18 @@ const nameAnimation = keyframes`
         width: 270px;
     }
 `
-// const bracketAnimation = keyframes`
-//     from {
-//         transform: translateX(0);
-//     }
-//     to {
-//         transform: translateX(225px);
-//     }
-// `
+
+const nameMobileAnimation = keyframes`
+    from {
+        width: 50px;
+    }
+    to {
+        width: 210px;
+    }
+`
 
 const NameWraper = styled.span`
     width: 270px;
-    // background-color: #0D1A63;
     color: #0AC4E0;
     margin-left: 6px;
     display: inline-flex;
@@ -30,18 +31,24 @@ const NameWraper = styled.span`
     position: relative;
     overflow: hidden;
     animation: ${nameAnimation} 1.5s ease;
+
+    @media (max-width: 768px) {
+        width: 210px;
+        animation: ${nameMobileAnimation} 1.5s ease;
+    }
     `
-    const Name = styled.span`
-    // display: inline-block;
-    width: 230px;
-    // color: #0AC4E0;
+const Name = styled.span`
+    width: 270px;
     position: absolute;
     left: 20px;
     padding: 2px 4px;
     background-color: #0D1A63;
     z-index: -1;
+    @media (max-width: 768px) {
+        width: 210px;
+    }
     `
-    const SquareBracket = styled.span`
+const SquareBracket = styled.span`
     padding: 2px 4px;
     background-color: #0D1A63;
 `
@@ -49,9 +56,11 @@ const NameWraper = styled.span`
 function HomeHeroContent() {
     return (
         <div className="home-hero-content">
-            <div className="image-container"></div>
+            <div className="image-container">
+                <img src={myImage} alt="bishal" />
+            </div>
             <div className="content-container">
-                <h1 className='content-header'>hi! i am 
+                <h1 className='content-header'>hi! i am
                     <NameWraper>
                         <SquareBracket>[</SquareBracket>
                         <Name>bishal sardar</Name>
@@ -60,6 +69,7 @@ function HomeHeroContent() {
                 </h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minus, quo suscipit ad maiores assumenda itaque ab distinctio officiis dolore atque vero sint</p>
             </div>
+            <FaArrowDown className='scroll-down-indicator' />
         </div>
     )
 }

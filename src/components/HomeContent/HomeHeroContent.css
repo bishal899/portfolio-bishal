@@ -1,26 +1,64 @@
+.home-hero-content {
+    position: relative;
+}
+
 .home-hero-content .image-container {
-    height: 100%;
-    width: 400px;
-    background-image: url('/src/assets/bishal.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
+    display: inline-flex;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.home-hero-content .image-container img[alt="bishal"] {
+    width: clamp(250px, 20vw, 300px);
+    border-radius: 6px;
+    box-shadow: 0 30px 60px 0 rgba(55, 55, 55, 0.4);
 }
 
 .content-container {
-    margin: auto;
-    padding: 1.8rem;
+    padding: clamp(0.8rem, 2vw, 2.2rem);
     width: 100%;
+    max-width: 475px;
 }
 
 .content-header {
+    font-size: 2rem;
     text-transform: capitalize;
     color: #30364f;
-    /* line-height: 5rem; */
-    margin: 12px 0;
+    margin-bottom: 12px;
+    margin-right: 8px;
 }
 
 .content-container p {
+    font-size: clamp(.9rem, 1vw, 1rem);
     line-height: 20px;
     max-width: 450px;
+}
+
+.scroll-down-indicator {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #30364f;
+    animation: float 1s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        bottom: 15px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-header {
+        font-size: 1.5rem;
+    }
+
+    .scroll-down-indicator {
+        font-size: 1rem;
+    }
 }
