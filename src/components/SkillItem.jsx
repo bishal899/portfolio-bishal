@@ -10,7 +10,6 @@ const barAnimation = keyframes`
   }
 `
 const PercentBar = styled.div`
-  // content: '${(props) => props.$value}';
   padding-right: 5px;
   border-radius: 8px;
   text-align: right;
