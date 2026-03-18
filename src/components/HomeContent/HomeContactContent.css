@@ -1,0 +1,21 @@
+.home-contact-content .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.home-contact-content .content-container h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    margin-bottom: 8px;
+    color: #30364f;
+}
+
+.home-contact-content .content-container p {
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 400px;
+}

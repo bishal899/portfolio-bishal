@@ -5,10 +5,12 @@ import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import { useState, useEffect } from 'react';
+
 function App() {
   const [dateTime, setDateTime] = useState(new Date());
   const [loadingDot, setLoadingDot] = useState('')
   const today = dateTime.getFullYear();
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setDateTime(new Date());
@@ -35,6 +37,7 @@ function App() {
     dateTime.getHours() < 12 ? 'morning' :
       dateTime.getHours() < 16 ? 'afternoon' :
         dateTime.getHours() < 21 ? 'evening' : 'night'
+
   return (
     <>
       <NavBar greeting={greeting} time={time} loadingDot={loadingDot} />

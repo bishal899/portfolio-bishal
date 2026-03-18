@@ -7,34 +7,34 @@
 
 .header h1 {
   padding: 1.2rem 0;
+  font-size: clamp(.9rem, 2vw, 2rem);
 }
+
 .header h1 span {
   display: inline-block;
   text-transform: capitalize;
   margin: 0 6px;
   cursor: pointer;
 }
-/* toggle button for small screens */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #f0f0db;
-  font-size: 1.6rem;
-  cursor: pointer;
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-}
 
-.header nav {
-  max-width: 680px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+.header .desktop-menu {
+  width: 100%;
+  max-width: 750px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header a {
+.header .mobile-menu,
+.header .menu-container,
+.header .social-links {
+  display: none;
+}
+
+.header .desktop-menu a {
+  width: 100%;
+  max-width: 250px;
   color: #f0f0db;
   font-size: 16px;
   text-decoration: none;
@@ -43,27 +43,108 @@
   border-top-right-radius: 6px;
 }
 
-.header a.active {
+.header .desktop-menu a.active {
   background-color: #f0f0db;
   color: #30364f;
   font-weight: 600;
 }
 
-/* mobile adjustments */
-@media (max-width: 600px) {
-  .menu-toggle {
-    display: block;
+.menu-btn {
+  color: #f0f0db;
+  vertical-align: middle;
+}
+
+/* .mobile-nav-container */
+
+.header .mobile-nav-container.active {
+  width: 100%;
+  height: 100dvh;
+  background-color: #30364f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  animation: menuAppear 0.5s ease;
+  overflow-y: hidden;
+}
+
+.header .mobile-nav-container.active .menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header .mobile-nav-container.active .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.header .mobile-nav-container.active .social-links a>* {
+  color: #f0f0db;
+  vertical-align: middle;
+}
+
+.header .menu-container a {
+  text-align: center;
+  color: #f0f0db;
+  text-decoration: none;
+  padding: .4rem 1.2rem;
+  border-radius: 6px;
+}
+
+.header .mobile-nav-container.active .menu-container a:hover,
+.header .mobile-nav-container.active .menu-container a:focus {
+  color: #30364f;
+  background-color: #f0f0db;
+}
+
+.header .mobile-nav-container.active button {
+  padding: .4rem 1.2rem;
+  background-color: #f0f0db;
+  text-transform: capitalize;
+  color: #30364f;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+@keyframes menuAppear {
+  from {
+    opacity: 0;
+    height: 0;
   }
-  .header nav {
+
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    text-align: left;
+  }
+
+  .header .desktop-menu {
     display: none;
-    grid-template-columns: 1fr;
   }
-  .header nav.open {
-    display: block;
-    text-align: center;
+
+  .header .mobile-menu {
+    display: inline-block;
   }
-  .header a {
-    display: block;
-    padding: 0.8rem 0;
-  }
+
 }

@@ -1,0 +1,31 @@
+.home-about-content img {
+    order: 2;
+}
+
+.home-about-content .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    padding: clamp(0.8rem, 1.6vw, 1.5rem);
+}
+
+.home-about-content .content-container p {
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    max-width: 420px;
+}
+
+@media (max-width: 768px) {
+    .home-about-content img {
+        order: 0;
+    }
+
+    .home-about-content .content-container p {
+        font-weight: 400;
+        font-size: 14px;
+        max-width: 420px;
+    }
+}

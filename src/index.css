@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-width: none;
+  font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: #F0F0DB;
-  font-family: "Poppins", sans-serif;
   position: relative;
 }
 

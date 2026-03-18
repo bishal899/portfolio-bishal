@@ -1,6 +1,7 @@
-import './FirstSlideContent.css'
-import './SliderContent.css'
+import './HomeHeroContent.css'
+import myImage from '../../assets/bishal.png'
 import styled, { keyframes } from 'styled-components'
+import { FaArrowDown } from "react-icons/fa6";
 
 const nameAnimation = keyframes`
     from {
@@ -11,9 +12,17 @@ const nameAnimation = keyframes`
     }
 `
 
+const nameMobileAnimation = keyframes`
+    from {
+        width: 50px;
+    }
+    to {
+        width: 210px;
+    }
+`
+
 const NameWraper = styled.span`
     width: 270px;
-    // background-color: #0D1A63;
     color: #0AC4E0;
     margin-left: 6px;
     display: inline-flex;
@@ -22,26 +31,36 @@ const NameWraper = styled.span`
     position: relative;
     overflow: hidden;
     animation: ${nameAnimation} 1.5s ease;
+
+    @media (max-width: 768px) {
+        width: 210px;
+        animation: ${nameMobileAnimation} 1.5s ease;
+    }
     `
+    
 const Name = styled.span`
-    // display: inline-block;
-    width: 230px;
-    // color: #0AC4E0;
+    width: 270px;
     position: absolute;
     left: 20px;
     padding: 2px 4px;
     background-color: #0D1A63;
     z-index: -1;
+    @media (max-width: 768px) {
+        width: 210px;
+        left: 18px;
+    }
     `
 const SquareBracket = styled.span`
     padding: 2px 4px;
     background-color: #0D1A63;
 `
 
-function FirstSlideContent() {
+function HomeHeroContent() {
     return (
-        <div className="first-slide-content">
-            <div className="image-container"></div>
+        <div className="home-hero-content">
+            <div className="image-container">
+                <img src={myImage} alt="bishal" />
+            </div>
             <div className="content-container">
                 <h1 className='content-header'>hi! i am
                     <NameWraper>
@@ -54,7 +73,9 @@ function FirstSlideContent() {
                     Currently on a mission to master the web, one pixel at a time.
                     Open to opportunities, collabs, and the occasional all-nighter.</p>
             </div>
+            <FaArrowDown className='scroll-down-indicator' />
         </div>
     )
 }
-export default FirstSlideContent
+
+export default HomeHeroContent
